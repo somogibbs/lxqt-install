@@ -13,6 +13,9 @@ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_
 #Install Bitwarden
 wget "https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb" -O bitwarden.deb
 
+#Install Speedtest
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash sudo apt -y install speedtest
+
 #Setup UFW
 sudo apt -y install ufw &&
 sudo ufw allow ssh &&
