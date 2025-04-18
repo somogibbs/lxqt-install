@@ -4,7 +4,7 @@ Install git after standard.iso debian install and clone this repo to pull script
 a minimal gnome install for an older laptop.
 After running the "first" script and rebooting system - 
 Update wifi with -- `sudo nano /etc/NetworkManager/NetworkManager.conf`
-Change ifupdown values ***managed=true*** to ***managed=false***, save and reboot with
+Change ifupdown values ***managed=true*** to ***managed=false*** then save and reboot with
 `sudo shutdown -r now`
 
 
