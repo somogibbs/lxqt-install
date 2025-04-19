@@ -8,7 +8,7 @@ gnome-shell-extension-dashtodock libproxy1-plugin-networkmanager network-manager
 file-roller gnome-extra-icons obsidian-icon-theme -y 
 
 ## Miscellaneous program install
-sudo apt -y install libavcodec-extra ffmpeg mpv cpu-x lm-sensors neofetch nala xfce4-terminal btop firefox-esr 
+sudo apt -y install libavcodec-extra ffmpeg mpv cpu-x lm-sensors psensor neofetch nala xfce4-terminal btop firefox-esr 
 
 #Install Joplin
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
