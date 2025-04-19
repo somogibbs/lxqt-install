@@ -22,8 +22,10 @@ sudo apt -y install speedtest
 
 #Setup UFW
 sudo apt -y install ufw &&
-sudo ufw allow ssh &&
 sudo ufw enable
 
-## Remove initial installer - reboot
-sudo apt purge ifupdown -y && sudo shutdown -r now
+## Configure wifi - reboot
+sudo apt purge ifupdown -y && 
+sudo systemctl enable NetworkManager &&
+sudo systemctl start NetworkManager &&
+sudo shutdown -r now
