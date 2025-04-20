@@ -8,9 +8,9 @@ Clone this repo with `git clone https://github.com/somogibbs/mn-gnome.git`
 `ls` then `chmod +x install.sh` then `./install.sh`
 ## Check wifi
 After running the "install" script and system reboot -
-Check wifi with -- `sudo nano /etc/NetworkManager/NetworkManager.conf`
-Change ifupdown values ***managed=false*** to ***managed=true*** 
-Enable NetworkManager with `sudo systemctl enable NetworkManager` followed by
-`sudo systemctl start NetworkManager` Then save and reboot with `sudo shutdown -r now`
+Check wifi .conf file with -- `sudo nano /etc/NetworkManager/NetworkManager.conf`
+Change ifupdown values ***managed=false*** to ***managed=true*** and save.
+NetworkManager should be enabled from install script but in case not, enable it with `sudo systemctl enable NetworkManager` followed by
+`sudo systemctl start NetworkManager` Reboot with `sudo shutdown -r now`
 
 
