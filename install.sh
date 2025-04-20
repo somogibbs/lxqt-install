@@ -14,7 +14,7 @@ curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.
 sudo apt -y install speedtest
 
 #Setup UFW
-sudo apt -y install ufw &&
+sudo apt -y install ufw 
 sudo ufw enable
 
 ## Configure wifi - reboot
