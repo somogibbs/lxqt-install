@@ -5,7 +5,7 @@ Clone this repo with `git clone https://github.com/somogibbs/mn-gnome.git`
 ## cd into downloaded folder 
 `cd mn-gnome`
 ## List and run install script
-`ls` then `chmod +x install.sh ./install.sh`
+`ls` then `chmod +x install.sh` then `./install.sh`
 ## Check wifi
 After running the "install" script and system reboot -
 Check wifi with -- `sudo nano /etc/NetworkManager/NetworkManager.conf`
