@@ -7,5 +7,5 @@ sudo apt auto remove
 mkdir ~/.themes
 mv ~/mn-gnome/themes.zip ~/.themes
 mv ~/mn-gnome/desktops.zip ~/Pictures
-sudo shutdown -r now
+
 
