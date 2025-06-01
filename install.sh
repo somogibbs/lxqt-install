@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade -y 
 
 ## Install Gnome components 
-sudo apt install gnome-core -y && sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extension-dashtodock gnome-extra-icons libproxy1-plugin-networkmanager network-manager-gnome file-roller -y 
+sudo apt install gnome-core -y && sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extension-dashtodock gnome-shell-extension-tiling-assistant gnome-shell-extension-blur-my-shell gnome-extra-icons libproxy1-plugin-networkmanager network-manager-gnome file-roller -y 
 
 ## Miscellaneous program install
 sudo apt -y install libavcodec-extra ffmpeg mpv cpu-x lm-sensors neofetch nala xfce4-terminal btop firefox-esr obsidian-icon-theme fonts-recommended variety 
