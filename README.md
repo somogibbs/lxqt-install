@@ -1,5 +1,5 @@
 # mn-gnome
-Gnome minimal install for my older laptop with themes and icon set
+Gnome minimal install for my older laptop with themes and icon set.
 After standard.iso debian install - Get some necessary tools with `sudo apt install git curl wget` 
 Clone this repo with `git clone https://github.com/somogibbs/mn-gnome.git` 
 ## cd into downloaded folder 
