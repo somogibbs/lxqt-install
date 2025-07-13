@@ -37,6 +37,11 @@ sudo apt install -y \
 sudo apt install -y \
     plank variety obsidian-icon-theme polybar rofi
 
+# Create and move folders
+mkdir ~/.themes
+mv ~/lxqt-install/themes.zip ~/.themes
+mv ~/lxqt-install/desktops.zip ~/Pictures
+
 # Cleanup
 tldr --update
 sudo apt autoremove -y
