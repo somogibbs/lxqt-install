@@ -1,29 +1,42 @@
-!#/bin/bash
-## Update initial install
-sudo apt update && sudo apt upgrade -y 
+#!/bin/bash
+# Minimal Debian LXQt Setup 
 
-## Install Gnome components 
-sudo apt install gnome-core -y && sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extension-dashtodock gnome-shell-extension-tiling-assistant gnome-shell-extension-blur-my-shell gnome-extra-icons libproxy1-plugin-networkmanager network-manager-gnome file-roller -y 
+# Add Bookworm backports repository
+echo "deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware" | sudo tee -a /etc/apt/sources.list
 
-## Miscellaneous program install
-sudo apt -y install libavcodec-extra ffmpeg mpv cpu-x lm-sensors neofetch xfce4-terminal btop firefox-esr obsidian-icon-theme fonts-recommended variety 
+# Update package lists
+sudo apt update
 
-# Install Speedtest
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash &&
-sudo apt -y install speedtest
+# === 🖥️ LXQt Desktop Environment ===
+sudo apt install -y \
+    lxqt-core lxqt-config sddm sddm-theme-debian lxqt-theme-debian
 
-# Setup UFW
-sudo apt -y install ufw 
-sudo ufw enable 
+# === 🧰 System Utilities ===
+sudo apt install -y \
+    gparted lshw lxtask xfce4-terminal cpu-x stacer preload tldr
 
-# Download Bitwarden debian package
-wget "https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=deb" -O bitwarden.deb
+# === 🌐 Network & Internet Tools ===
+sudo apt install -y \
+    blueman curl wget firefox-esr qbittorrent
 
-# Install Joplin
-wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+# === 🔒 Security & Backup ===
+sudo apt install -y \
+    openssh-server ufw timeshift
+sudo ufw allow ssh
+sudo ufw enable
 
-## Configure wifi - reboot
-sudo apt purge ifupdown -y && 
-sudo systemctl enable NetworkManager &&
-sudo systemctl start NetworkManager &&
-sudo shutdown -r now
+# === 🎥 Multimedia Support ===
+sudo apt install -y \
+    libavcodec-extra ffmpeg mpv
+
+# === 🧑‍💻 Productivity Apps ===
+sudo apt install -y \
+    libreoffice-writer synaptic
+
+# === 🛎️ Optional Eye Candy ===
+sudo apt install -y \
+    plank variety obsidian-icon-theme polybar rofi
+
+# Cleanup
+tldr --update
+sudo apt autoremove -y
