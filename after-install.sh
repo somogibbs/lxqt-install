@@ -5,7 +5,7 @@ sudo apt auto remove
 
 # Create and move folders
 mkdir ~/.themes
-mv ~/mn-gnome/themes.zip ~/.themes
-mv ~/mn-gnome/desktops.zip ~/Pictures
+mv ~/lxqt-install/themes.zip ~/.themes
+mv ~/lxqt-install/desktops.zip ~/Pictures
 
 
