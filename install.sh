@@ -13,11 +13,11 @@ sudo apt install -y \
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
-    gparted lshw lxtask xfce4-terminal cpu-x stacer preload tldr
+    gparted lshw lxtask xfce4-terminal cpu-x stacer preload 
 
 # === 🌐 Network & Internet Tools ===
 sudo apt install -y \
-    blueman curl wget firefox-esr qbittorrent
+    blueman curl wget firefox-esr 
 
 # === 🔒 Security & Backup ===
 sudo apt install -y \
@@ -35,7 +35,7 @@ sudo apt install -y \
 
 # === 🛎️ Optional Eye Candy ===
 sudo apt install -y \
-    plank variety obsidian-icon-theme polybar rofi
+    variety obsidian-icon-theme
 
 # Create and move folders
 mkdir ~/.themes
