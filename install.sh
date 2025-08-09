@@ -9,7 +9,8 @@ sudo apt update
 
 # === 🖥️ LXQt Desktop Environment ===
 sudo apt install -y \
-    lxqt-core lxqt-config sddm sddm-theme-debian lxqt-theme-debian
+    lxqt-core lxqt-config sddm sddm-theme-debian lxqt-theme-debian \
+    fonts-recommended fonts-firacode fonts-jetbrains-mono
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
