@@ -15,7 +15,7 @@ sudo apt install -y \
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
-    gparted lshw lxtask xfce4-terminal cpu-x stacer preload 
+    gparted lshw lxtask cpu-x stacer preload fastfetch
 
 # === 🌐 Network & Internet Tools ===
 sudo apt install -y \
