@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install -y \
     lxqt-core lxqt-config sddm sddm-theme-debian lxqt-theme-debian \
     fonts-recommended fonts-firacode fonts-jetbrains-mono \
-    obsidian-icon-theme
+    obsidian-icon-theme tldr
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
@@ -34,15 +34,6 @@ sudo apt install -y \
 # === 🧑‍💻 Productivity Apps ===
 sudo apt install -y \
     libreoffice-writer synaptic
-
-# === 🛎️ Optional Eye Candy ===
-sudo apt install -y \
-    variety obsidian-icon-theme
-
-# Create and move folders
-mkdir ~/.themes
-mv ~/lxqt-install/themes.zip ~/.themes
-mv ~/lxqt-install/desktops.zip ~/Pictures
 
 # Cleanup
 tldr --update
