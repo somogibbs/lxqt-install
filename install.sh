@@ -7,12 +7,12 @@ sudo apt update
 # === 🖥️ LXQt Desktop Environment ===
 sudo apt install -y \
     lxqt-core sddm sddm-theme-debian lxqt-theme-debian \
-    obsidian-icon-theme papirus-icon-theme numix-icon-theme \ 
-    fonts-recommended fonts-firacode fonts-jetbrains-mono 
+    obsidian-icon-theme papirus-icon-theme fonts-recommended  \ 
+    fonts-jetbrains-mono 
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
-    gparted lshw lxtask cpu-x preload fastfetch
+    gparted lshw lxtask cpu-x preload fastfetch btop
 
 # === 🌐 Network & Internet Tools ===
 sudo apt install -y \
