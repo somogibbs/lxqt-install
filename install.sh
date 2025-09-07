@@ -12,7 +12,7 @@ sudo apt install -y \
 
 # === 🧰 System Utilities ===
 sudo apt install -y \
-    gparted lshw lxtask cpu-x preload fastfetch btop
+    lxtask cpu-x preload fastfetch btop
 
 # === 🌐 Network & Internet Tools ===
 sudo apt install -y \
@@ -29,7 +29,7 @@ sudo apt install -y \
 
 # === 🧑‍💻 Productivity Apps ===
 sudo apt install -y \
-    gnome-text-editor synaptic
+    synaptic mousepad
 
 # Cleanup
 sudo apt autoremove -y
